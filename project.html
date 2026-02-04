@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>IT BA Project Showcase</title>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Google Fonts: Manrope -->
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#f42536",
+                        "background-light": "#f8f5f6",
+                        "background-dark": "#221011",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Manrope', sans-serif;
+        }
+        .masonry-grid {
+            column-count: 2;
+            column-gap: 1.5rem;
+        }
+        @media (max-width: 768px) {
+            .masonry-grid {
+                column-count: 1;
+            }
+        }
+        .masonry-item {
+            break-inside: avoid;
+            margin-bottom: 1.5rem;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-[#1c0d0e] dark:text-[#fcf8f8] transition-colors duration-300">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+<!-- Navigation -->
+<header
+            class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f4e7e8] dark:border-b-primary/20 px-10 py-3 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md sticky top-0 z-50">
+            <div class="flex items-center gap-4 text-[#1c0d0e] dark:text-white">
+                <div class="size-6 text-primary">
+                    <svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z"
+                            fill="currentColor"></path>
+                    </svg>
+                </div>
+                <h2 class="text-lg font-bold leading-tight tracking-[-0.015em]">IT BA Portfolio</h2>
+            </div>
+            <div class="flex flex-1 justify-end gap-8">
+                <nav class="flex items-center gap-9">
+                    <a class="text-sm font-medium hover:text-primary transition-colors" href="http://127.0.0.1:3000/c:/Users/BA-VSC/Downloads/stitch/stitch/portfolio_home_&_experience_2/code.html?serverWindowId=e46a7eba-f61d-449b-8249-23fb6bccf9f7">Home</a>
+                    <a class="text-sm font-medium hover:text-primary transition-colors" href="http://127.0.0.1:3000/c:/Users/BA-VSC/Downloads/stitch/stitch/it_ba_project_showcase/code.html?serverWindowId=e46a7eba-f61d-449b-8249-23fb6bccf9f7">Projects</a>
+                    <a class="text-sm font-medium hover:text-primary transition-colors" href="http://127.0.0.1:3000/c:/Users/BA-VSC/Downloads/stitch/stitch/skills_and_academic_degrees_2/code.html?serverWindowId=e46a7eba-f61d-449b-8249-23fb6bccf9f7">Education</a>
+                    <a class="text-sm font-medium hover:text-primary transition-colors" href="#">About</a>
+                </nav>
+                <a
+  href="http://127.0.0.1:3000/c:/Users/BA-VSC/Downloads/stitch/stitch/contact_and_connectivity/code.html?serverWindowId=e46a7eba-f61d-449b-8249-23fb6bccf9f7"
+  class="flex min-w-[120px] cursor-pointer items-center justify-center rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold transition-transform hover:scale-105 active:scale-95"
+>
+  Contact Me
+</a>
+
+            </div>
+        </header>
+<main class="mx-auto w-full max-w-[1200px] flex-1 px-6 py-12 md:py-20">
+<!-- Page Heading -->
+<div class="mb-12 flex flex-col gap-4">
+<h2 class="text-4xl font-black leading-tight tracking-tight md:text-5xl">Project Gallery</h2>
+<p class="max-w-2xl text-lg text-[#9c4950] dark:text-[#d1a2a6]">
+                    A technical showcase of enterprise solutions, from process re-engineering and gap analysis to complex system integrations.
+                </p>
+</div>
+<!-- Filters -->
+<div class="mb-10 flex flex-wrap gap-2">
+<div class="cursor-pointer rounded-full bg-primary px-6 py-2 text-sm font-bold text-white">
+                    All Projects
+                </div>
+<div class="cursor-pointer rounded-full bg-white dark:bg-white/5 border border-primary/10 px-6 py-2 text-sm font-medium hover:border-primary/40 transition-all">
+                    System Integration
+                </div>
+<div class="cursor-pointer rounded-full bg-white dark:bg-white/5 border border-primary/10 px-6 py-2 text-sm font-medium hover:border-primary/40 transition-all">
+                    Agile Delivery
+                </div>
+<div class="cursor-pointer rounded-full bg-white dark:bg-white/5 border border-primary/10 px-6 py-2 text-sm font-medium hover:border-primary/40 transition-all">
+                    Process Re-engineering
+                </div>
+<div class="cursor-pointer rounded-full bg-white dark:bg-white/5 border border-primary/10 px-6 py-2 text-sm font-medium hover:border-primary/40 transition-all">
+                    Stakeholder Mapping
+                </div>
+</div>
+<!-- Masonry Project Grid -->
+<div class="masonry-grid">
+<!-- Project 1 -->
+<div class="masonry-item group relative overflow-hidden rounded-xl bg-white dark:bg-white/5 p-6 shadow-sm border-b-2 border-transparent hover:border-primary transition-all duration-300">
+<div class="mb-6 overflow-hidden rounded-lg">
+<div class="aspect-video w-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Technical dashboard showing data visualization charts" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBUjdSykSYZ0f0H7Yd-uwC7m6AJqw_kKzNNg1WQcny1wUcLuy52u0ztvmDy6etHG3542O6DtiBuZrNPpMEGCaYpnfkAf0RHaKeT-g3FeLN5l9909UAT4-wJfnjiGowOVK1P8uTdsHTQycR-RlT-tQN6_Q56i-16GIMKBoFDbH0-oR0Hm11hClkRbZQ1QpAZ-r0zKtLS06O7wppUednDrn2cArf0kUxfXjTgy84CMWpjMsWIZzqUdOKNLQ-uM_kHNkBSIQx5VVKKBQ");'></div>
+</div>
+<div class="flex flex-col gap-2">
+<span class="inline-block text-[10px] font-bold uppercase tracking-widest text-primary">Case Study • ERP</span>
+<h3 class="text-xl font-bold group-hover:text-primary transition-colors">Enterprise ERP Migration</h3>
+<p class="text-sm leading-relaxed text-[#9c4950] dark:text-[#d1a2a6]">
+                            Led a global gap analysis for a Fortune 500 company. Managed cross-functional stakeholders to align legacy workflows with modern Cloud ERP requirements.
+                        </p>
+<div class="mt-4 flex flex-wrap gap-2">
+<span class="rounded bg-background-light dark:bg-white/10 px-2 py-1 text-[11px] font-bold">SQL</span>
+<span class="rounded bg-background-light dark:bg-white/10 px-2 py-1 text-[11px] font-bold">BPMN 2.0</span>
+<span class="rounded bg-background-light dark:bg-white/10 px-2 py-1 text-[11px] font-bold">STAKEHOLDER MGMT</span>
+</div>
+</div>
+</div>
+<!-- Project 2 -->
+<div class="masonry-item group relative overflow-hidden rounded-xl bg-white dark:bg-white/5 p-6 shadow-sm border-b-2 border-transparent hover:border-primary transition-all duration-300">
+<div class="mb-6 overflow-hidden rounded-lg">
+<div class="aspect-[4/3] w-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Close up of a tablet displaying analytical charts" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA6KxKroAkXOh1UHa9Gbdd3PJJhK5kLcVy21Uvb-VWb6Ze8Lhws1a3GQWAd2IBR93t-A_Ywv3PErUWkELr5b1G_k0J6B-oV0uFkanLx0TmCr6YTx1jCnR9wwjQ3FAzbRIGYQbBkbuWqdigBI7Ywnav6LVcCxLAKlREYpfTEFB_6H_ZfgWWiL7X1aXUhgBEin61aGAqMSQ61Zp8pjGruHotkYJWW3GrXkUiU0eRMlM1rkUN1WGfxG9MqOg0JW1zSrQ2NJTSoVeT6rw");'></div>
+</div>
+<div class="flex flex-col gap-2">
+<span class="inline-block text-[10px] font-bold uppercase tracking-widest text-primary">Case Study • Fintech</span>
+<h3 class="text-xl font-bold group-hover:text-primary transition-colors">API Integration Strategy</h3>
+<p class="text-sm leading-relaxed text-[#9c4950] dark:text-[#d1a2a6]">
+                            Defined technical requirements for a third-party payment gateway integration. Reduced transaction latency by 40% through optimized data mapping.
+                        </p>
+<div class="mt-4 flex flex-wrap gap-2">
+<span class="rounded bg-background-light dark:bg-white/10 px-2 py-1 text-[11px] font-bold">REST API</span>
+<span class="rounded bg-background-light dark:bg-white/10 px-2 py-1 text-[11px] font-bold">SWAGGER</span>
+<span class="rounded bg-background-light dark:bg-white/10 px-2 py-1 text-[11px] font-bold">JSON</span>
+</div>
+</div>
+</div>
+<!-- Project 3 -->
+<div class="masonry-item group relative overflow-hidden rounded-xl bg-white dark:bg-white/5 p-6 shadow-sm border-b-2 border-transparent hover:border-primary transition-all duration-300">
+<div class="mb-6 overflow-hidden rounded-lg">
+<div class="aspect-square w-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Team brainstorming session with sticky notes on a glass wall" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC13n30XmtnO4IR8E_0swS2ajCpLEZNo0BhThBbT1PuADFzKSBsNluRiv2lCtj13rWxIhhiUAm8CFt70B8q8DXYyNyhkHMad7_LCAv5lHCcqEqECr3gVJWddRR9igQR-jd1bCBsIcsj5c38IyaMlA7qjE0PV1qQA2XDERXEn_8EFkAPOE42M79-C2KRzJWjG5LIToILpcDbjF_d5ITMqx2HRjrFCW-I1CXfmnzDjtzkEL3vFv0LxC6q1oVLoAqwD3kIvR7GyWwUJg");'></div>
+</div>
+<div class="flex flex-col gap-2">
+<span class="inline-block text-[10px] font-bold uppercase tracking-widest text-primary">Case Study • Optimization</span>
+<h3 class="text-xl font-bold group-hover:text-primary transition-colors">Checkout Flow Re-engineering</h3>
+<p class="text-sm leading-relaxed text-[#9c4950] dark:text-[#d1a2a6]">
+                            A deep dive into UX bottlenecks. Utilized Google Analytics to identify drop-off points and re-designed the guest checkout process, increasing conversion by 12%.
+                        </p>
+<div class="mt-4 flex flex-wrap gap-2">
+<span class="rounded bg-background-light dark:bg-white/10 px-2 py-1 text-[11px] font-bold">USER STORIES</span>
+<span class="rounded bg-background-light dark:bg-white/10 px-2 py-1 text-[11px] font-bold">WIREFRIMING</span>
+<span class="rounded bg-background-light dark:bg-white/10 px-2 py-1 text-[11px] font-bold">A/B TESTING</span>
+</div>
+</div>
+</div>
+<!-- Project 4 -->
+<div class="masonry-item group relative overflow-hidden rounded-xl bg-white dark:bg-white/5 p-6 shadow-sm border-b-2 border-transparent hover:border-primary transition-all duration-300">
+<div class="mb-6 overflow-hidden rounded-lg">
+<div class="aspect-video w-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Modern workspace with multiple monitors and code" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDq-h5BvTy58QmGtKFOn3kl8-3a3SmAOhCnQEVL6XKaBl-jMV56BoS_7_L-6t-pIf7S9_hhnEXl9UGecrEyJNsSHBUuufeWlHGaUk609mmDhqmxpZB_AtHn8ZlLMf4foZso6gV37MuQPqFYKW6fFI7VBqKogMZb-0u-QowyWLeffAtfhu_0UF-e93S7VEu3vxVXzDN5SIRYkD6IuNy0cf8TDehGEI-nxpsNkswkk0fzHaCGlG-M38BMeA3SF9yuSVP4So-YiEKjTA");'></div>
+</div>
+<div class="flex flex-col gap-2">
+<span class="inline-block text-[10px] font-bold uppercase tracking-widest text-primary">Case Study • Salesforce</span>
+<h3 class="text-xl font-bold group-hover:text-primary transition-colors">CRM Implementation &amp; UAT</h3>
+<p class="text-sm leading-relaxed text-[#9c4950] dark:text-[#d1a2a6]">
+                            Coordinated UAT for a 200-user Salesforce rollout. Created comprehensive test scripts and managed defect tracking through JIRA.
+                        </p>
+<div class="mt-4 flex flex-wrap gap-2">
+<span class="rounded bg-background-light dark:bg-white/10 px-2 py-1 text-[11px] font-bold">JIRA</span>
+<span class="rounded bg-background-light dark:bg-white/10 px-2 py-1 text-[11px] font-bold">UAT SCRIPTS</span>
+<span class="rounded bg-background-light dark:bg-white/10 px-2 py-1 text-[11px] font-bold">CONFLUENCE</span>
+</div>
+</div>
+</div>
+</div>
+<!-- CTA Section -->
+<section class="mt-20 rounded-2xl bg-white p-10 text-center dark:bg-white/5 border border-primary/5">
+<div class="mx-auto max-w-2xl">
+<h2 class="mb-4 text-3xl font-black md:text-4xl">Ready to optimize your processes?</h2>
+<p class="mb-8 text-[#9c4950] dark:text-[#d1a2a6]">
+                        I'm currently open to freelance BA roles and full-time technical analyst positions. Let's discuss how I can help bridge the gap between your business and technology.
+                    </p>
+<div class="flex flex-col items-center justify-center gap-4 sm:flex-row">
+<button class="flex items-center gap-2 rounded-lg bg-primary px-8 py-3 font-bold text-white transition-all hover:bg-primary/90">
+                            Get in Touch
+                            <span class="material-symbols-outlined text-sm">send</span>
+</button>
+<button class="flex items-center gap-2 rounded-lg border border-primary/20 px-8 py-3 font-bold transition-all hover:bg-primary/5">
+                            Download CV
+                            <span class="material-symbols-outlined text-sm">download</span>
+</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="mt-auto py-10 border-t border-[#f4e7e8] dark:border-primary/10 text-center">
+            <p class="text-sm text-[#9c4950] dark:text-primary/60">
+                © 2026 IT Business Analyst Portfolio. Designed with clarity in mind.
+            </p>
+        </footer>
+</div>
+</body></html>
